@@ -1,4 +1,4 @@
-package stosik.seafood.market.facade.domain
+package stosik.seafood.market.facade.market.domain
 
 import java.math.BigDecimal
 

@@ -43,11 +43,23 @@ repositories {
 }
 
 dependencies {
+    /*
+        SPRING
+     */
 	compile('org.springframework.boot:spring-boot-starter-web')
-	compile('com.fasterxml.jackson.module:jackson-module-kotlin')
+    compile("org.springframework.boot:spring-boot-starter-data-mongodb")
+
+    /*
+    	KOTLIN
+     */
+    compile('com.fasterxml.jackson.module:jackson-module-kotlin')
 	compile("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	compile("org.jetbrains.kotlin:kotlin-reflect")
 	compile "io.github.microutils:kotlin-logging:${kotlinLogging}"
+
+	/*
+		TEST
+	 */
 	compile "org.jetbrains.spek:spek-subject-extension:${spek}"
 
 	testCompile "org.jetbrains.kotlin:kotlin-test:${kotlinVersion}"
@@ -55,5 +67,5 @@ dependencies {
 	testRuntime "org.junit.vintage:junit-vintage-engine:${junit}"
 	testCompile "org.jetbrains.spek:spek-api:${spek}"
 	testRuntime "org.jetbrains.spek:spek-junit-platform-engine:${spek}"
-	testCompile('org.springframework.boot:spring-boot-starter-test')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
 }
