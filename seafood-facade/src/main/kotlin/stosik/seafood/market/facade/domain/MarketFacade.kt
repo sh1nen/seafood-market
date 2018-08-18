@@ -1,4 +1,4 @@
-package stosik.seafood.market.facade.market.domain
+package stosik.seafood.market.facade.domain
 
 import mu.KotlinLogging
 import org.springframework.data.domain.Pageable

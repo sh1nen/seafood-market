@@ -1,4 +1,4 @@
-package stosik.seafood.market.facade
+package stosik.seafood.market
 
 import org.springframework.boot.Banner
 import org.springframework.boot.autoconfigure.SpringBootApplication

@@ -72,5 +72,6 @@ dependencies {
 	testCompile 'org.codehaus.groovy:groovy-all:2.4.6'
 	testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
 	testCompile 'org.spockframework:spock-spring:1.0-groovy-2.4'
-	testCompile 'org.springframework.cloud:spring-cloud-starter-contract-verifier'
+    testCompile "org.springframework.cloud:spring-cloud-starter-contract-stub-runner"
+    testCompile 'org.springframework.cloud:spring-cloud-starter-contract-verifier'
 }

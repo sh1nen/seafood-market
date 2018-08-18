@@ -1,4 +1,4 @@
-package stosik.seafood.market.facade.market.domain
+package stosik.seafood.market.facade.domain
 
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
