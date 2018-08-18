@@ -4,6 +4,7 @@ import Header from "./Header";
 import Order from "./Order";
 import Inventory from "./Inventory";
 import Fish from "./Fish";
+import database from "./../database";
 
 import sampleFishes from "./../sample-fishes";
 
@@ -12,6 +13,18 @@ export class App extends Component {
     fishes: {},
     order: {}
   };
+
+  componentDidMount() {
+    const { params } = this.props.match;
+    this.ref = database.syncState(`${params.storeId}/fishes`, {
+      context: this,
+      state: "fishes"
+    });
+  }
+
+  componentWillUnmount() {
+    database.removeBinding(this.ref);
+  }
 
   addFish = fish => {
     const fishes = { ...this.state.fishes };
