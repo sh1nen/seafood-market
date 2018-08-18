@@ -1,13 +1,15 @@
-import React, {Component} from 'react'
+import React, { Component } from "react";
 
 export class Order extends Component {
-    render() {
-        return (
-            <div className="order">
-                Order !!!
-            </div>
-        )
-    }
+  render() {
+    const orderIds = Object.keys(this.props.order);
+    return (
+      <div className="order-wrap">
+        <h2>Order</h2>
+        {orderIds}
+      </div>
+    );
+  }
 }
 
 export default Order;

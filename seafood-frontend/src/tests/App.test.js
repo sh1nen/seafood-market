@@ -16,6 +16,7 @@ describe("<App />", () => {
   it("should render one <Header /> component", () => {
     const wrapper = shallow(<App />);
     expect(wrapper.find(Header)).to.have.length(1);
+    expect(wrapper.find(Header)).to.have.
   });
 
   it("should render one <Inventory /> component", () => {
