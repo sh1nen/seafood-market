@@ -1,5 +1,7 @@
 package stosik.seafood.market.facade.domain
 
-import java.math.BigDecimal
-
-internal data class ProductDto(val name: String, val category: String, val price: BigDecimal)
+internal data class ProductDto(val name: String,
+                               val status: String,
+                               val desc: String,
+                               val imageUrl: String,
+                               val price: Int)
